@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 
 public class ConnectToURL {
+
+    
     public static void main(String[] args) throws Exception{
         try {
             URL myURL = new URL("https://codingblackfemales.com/");

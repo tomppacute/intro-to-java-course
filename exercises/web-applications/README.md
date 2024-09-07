@@ -25,11 +25,11 @@ Analyse the following HTTP request:
     Connection: keep-alive
 ```
 
-1. What is the requested URL?
-2. Which version of HTTP is used?
-3. Does the browser ask for a persistent or a non-persistent connection?
+1. What is the requested URL? /martignon/index.html
+2. Which version of HTTP is used? 1.1
+3. Does the browser ask for a persistent or a non-persistent connection? persistent
 4. What is, in your opinion, the utility in indicating the type (and version) of browser used by
-the client in the HTTP Request?
+the client in the HTTP Request? Some browsers need older versions. So it would be helpful for the server to know which clients work best with which versions.
 
 **<ins>Exercise 2</ins>**
 
@@ -42,7 +42,7 @@ An HTTP client sends the following message:
     If-modified-since: 27 Feb 2017 08:10:00
 ```
 
-Write down two feasible responses of the HTTP server (only the status line)
+Write down two feasible responses of the HTTP server (only the status line). 200 and 404.
 
 ## :spider_web: HTML
 
