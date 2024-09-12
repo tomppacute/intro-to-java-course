@@ -1,0 +1,36 @@
+
+CREATE TABLE Profiles (
+  UserHandle VARCHAR(50) PRIMARY KEY,
+  EmailAddress VARCHAR(100),
+  Picture BLOB,
+  Description VARCHAR(250)
+);
+
+INSERT INTO Profiles (UserHandle, EmailAddress, Picture, Description) VALUES 
+('@serenawilliams',
+'serena@serenawilliams.com', 
+'https://instagram.hlh5s3-6.fna.fbcdn.net/v/t28.73736', 
+'I’m Olympia’s mom. @serena ships WORLDWIDE www.serenawilliams.com');
+
+CREATE TABLE Posts (
+  UserHandle VARCHAR(50),
+  PostPicture BLOB,
+  PostText VARCHAR(250),
+  PostDate DATE
+);
+
+INSERT INTO Posts (UserHandle, PostPicture, PostText, PostDate) VALUES 
+('@serenawilliams',
+'tennisracket.jpg', 
+'This is my best tennis racket! ☺', 
+2020/03/28),
+('@serenawilliams',
+'magazine.jpg', 
+'My latest magazine cover', 
+2020/04/14),
+('@serenawilliams',
+'trophies.jpg', 
+NULL, 
+2020/04/14)
+;
+

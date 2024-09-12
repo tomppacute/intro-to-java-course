@@ -1,0 +1,56 @@
+
+
+-- CREATE database LibraryDB;
+
+-- USE database LibraryDB;
+
+CREATE TABLE Books (
+  BookID INT AUTO_INCREMENT PRIMARY KEY,
+  Title VARCHAR(100),
+  Author VARCHAR(100),
+  Genre VARCHAR(50),
+  PublishedYear INT
+);
+
+SHOW TABLES;
+
+DESCRIBE Books;
+
+INSERT INTO Books (Title, Author, Genre, PublishedYear) VALUES
+
+('The Great Gatsby', 'F. Scott Fitzgerald', 'Fiction', 1925),
+
+('To Kill a Mockingbird', 'Harper Lee', 'Fiction', 1960),
+
+('1984', 'George Orwell', 'Dystopian', 1949);
+
+SELECT * FROM Books;
+
+SELECT * FROM Books WHERE Genre = 'Fiction';
+
+INSERT INTO Books (Title, Author, Genre, PublishedYear) VALUES
+
+('Xala', 'Ousmane Sembene', 'Fiction', 1975);
+
+UPDATE Books
+  SET Genre = 'Southern Gothic'
+  WHERE Title = 'To Kill a Mockingbird';
+  
+SELECT * FROM Books;
+
+CREATE TABLE Members ( 
+MemberID INT AUTO_INCREMENT PRIMARY KEY,  
+FirstName VARCHAR(50), 
+LastName VARCHAR(50), 
+MembershipDate DATE);
+
+SHOW TABLES;
+
+DESCRIBE Members;
+
+INSERT INTO Members (FirstName, LastName, MembershipDate) VALUES 
+('John', 'Doe', '2024-01-15'), 
+('Jane', 'Smith', '2024-03-22'), 
+('Emily', 'Johnson', '2024-07-19');
+
+SELECT * FROM Members;
